@@ -5,7 +5,8 @@
   "main": "index.js",
   "author": "Helgi Freyr Helgason",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node ."
   },
   "dependencies": {
     "discord.io": "^2.5.3",
