@@ -5,13 +5,13 @@ let date = 'Engin dagsetning';
 
 bot.on('message', (message) => {
     if (message.content === '!date') {
-        message.reply(date);
+        message.channel.sendMessage(date);
     } else if (message.content.substring(0,8)  === '!newDate') {
         date = message.content.substring(9);
         let newDate = `Nýja dagsetningin er: ${date}`;
-        message.reply(newDate);
+        message.channel.sendMessage(newDate);
     } else if (message.content === '!help') {
-		message.reply(`Skipanir eru !date og !newDate`);
+		message.channel.sendMessage(`Skipanir eru !date og !newDate`);
 	}
 });
 
