@@ -12,6 +12,10 @@ bot.on('message', (message) => {
         message.channel.send(newDate);
     } else if (message.content === '!help') {
 		message.channel.send(`Skipanir eru !date og !newDate`);
+	} else if (message.content === '!greet') {
+		message.channel.send(`What is up guys, it's ya boi`);
+	} else if (message.content === '!alive') {
+		message.channel.send(`https://media1.giphy.com/media/3oEjI6hkw6nbYNQkz6/giphy.gif`);
 	}
 });
 
