@@ -16,7 +16,7 @@ bot.on('message', (message) => {
 		message.channel.send(`What is up guys, it's ya boi. Comin' at ya live through the power of Discord`);
 	} else if (message.content === '!alive') {
 		message.channel.send(`https://media1.giphy.com/media/3oEjI6hkw6nbYNQkz6/giphy.gif`);
-	} else if (message.content === '!heltz') {
+	} else if (RegExp('hjalti', 'i').test(message.content)) {
 		message.channel.send(`Hjalti er negri`);
 	}
 });
