@@ -4,7 +4,6 @@ const bot = new Discord.Client();
 let date = 'Engin dagsetning';
 
 bot.on('message', (message) => {
-	console.log(message.author.bot);
     if (message.content === '!date') {
         message.channel.send(date);
     } else if (message.content.substring(0,8)  === '!newDate') {
