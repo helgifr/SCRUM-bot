@@ -15,6 +15,12 @@ bot.on('message', (message) => {
 			message.channel.send(newDate);
 		} else if (message.content === '!help') {
 			message.channel.send(`Skipanir eru !date, !newDate og !greet`);
+		} else if (message.content === '!help') {
+		message.channel.send(`Skipanir eru !alive !greet`);
+		} else if (message.content === '!greet') {
+			message.channel.send(`What is up guys, it's ya boi. Comin' at ya live through the power of Discord`);
+		} else if (message.content === '!alive') {
+			message.channel.send(`https://media1.giphy.com/media/3oEjI6hkw6nbYNQkz6/giphy.gif`);
 		}
     } else if (message.author.id === '243985999976202241' && ko) {
 		message.reply(`Tegidu`);
