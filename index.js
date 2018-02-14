@@ -37,4 +37,4 @@ bot.on('message', (message) => {
 	}
 });
 
-bot.login(/*process.env.BOT_TOKEN*/'NDEyNTkxOTI5Njk2NTgzNjgw.DWUdlw.4Tf2r1-bxb1UN77w1iOBJdFEMcE');
+bot.login(process.env.BOT_TOKEN);
