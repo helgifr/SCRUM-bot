@@ -17,11 +17,11 @@ bot.on('message', (message) => {
 		message.channel.send(`What is up guys, it's ya boi. Comin' at ya live through the power of Discord`);
 	} else if (message.content === '!alive') {
 		message.channel.send(`https://media1.giphy.com/media/3oEjI6hkw6nbYNQkz6/giphy.gif`);
-	} } else if (message.content === '!scrumfundur') {
+	} else if (message.content === '!scrumfundur') {
 		scrumfundur = true;
 		message.channel.send('Hvenær hittist hópurinn síðast?')
 	}
-		if(message.content === '!next' && scrumfundur){
+		if(message.content === '!next' && scrumfundur) {
 			if(stage === 0)
 				message.channel.send('Hvað hafiði gert síðan að hópurinn hittist síðast?')
 			else if (stage === 1)
