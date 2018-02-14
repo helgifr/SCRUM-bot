@@ -36,7 +36,6 @@ bot.on('message', (message) => {
 			stage++;
 		}
 
-	}
 });
 
 bot.login(process.env.BOT_TOKEN);
